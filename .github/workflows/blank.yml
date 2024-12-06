@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Win a $500 Cash Prize</title>
+  <meta name="description" content="Win a $500 cash prize! Enter your details today to participate in this exciting giveaway.">
+  <meta property="og:title" content="Win a $500 Cash Prize!">
+  <meta property="og:description" content="Enter your details today and stand a chance to win $500.">
+  <meta property="og:image" content="your-image-url.jpg">
+  <meta property="og:url" content="your-page-url">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    header {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 10%;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #f44336;
+    }
+
+    .hero {
+      background-image: url('https://images.pexels.com/photos/6693661/pexels-photo-6693661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-btn {
+      background-color: #f44336;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+
+    .section {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #6a1b9a;
+    }
+
+    .section p {
+      font-size: 1rem;
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .share-buttons button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .share-buttons .facebook { background-color: #4267B2; }
+    .share-buttons .twitter { background-color: #1DA1F2; }
+    .share-buttons .whatsapp { background-color: #25D366; }
+    .share-buttons .linkedin { background-color: #0A66C2; }
+    .share-buttons .email { background-color: #333; }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    footer li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    footer a {
+      color: white;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Win $500</h1>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#share">Share</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Win a $500 Cash Prize!</h1>
+      <p>Submit your email and ZIP code for a chance to win!</p>
+      <a href="#" class="cta-btn">Get Started Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2>About</h2>
+      <p>Our campaign aims to give you the chance to win exciting prizes. Fill out the easy form and get an exciting chance to win $500.</p>
+    </div>
+  </section>
+
+  <!-- Share Section -->
+  <section class="section" id="share">
+    <div class="container">
+      <h2>Share to Win!</h2>
+      <p>Share this offer with 10 friends and win instantly!</p>
+      <div class="share-buttons">
+        <button class="facebook" onclick="share('Facebook')">
+          <i class="fab fa-facebook-f"></i> Share on Facebook
+        </button>
+        <button class="twitter" onclick="share('Twitter')">
+          <i class="fab fa-twitter"></i> Share on Twitter
+        </button>
+        <button class="whatsapp" onclick="share('WhatsApp')">
+          <i class="fab fa-whatsapp"></i> Share on WhatsApp
+        </button>
+        <button class="linkedin" onclick="share('LinkedIn')">
+          <i class="fab fa-linkedin-in"></i> Share on LinkedIn
+        </button>
+        <button class="email" onclick="share('Email')">
+          <i class="fas fa-envelope"></i> Share via Email
+        </button>
+      </div>
+      <p id="share-count">Shares: 0 / 10</p>
+      <p id="win-message" style="color: green; font-weight: bold; display: none;">
+        Congratulations! You've shared with 10 friends and won!
+      </p>
+    </div>
+  </section>
+
+<section class="section" id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Please contact us if you have any questions।</p>
+      <p><strong>Email:</strong> Win$500@gmail.com</p>
+      <p><strong>Phone:</strong> +1 234 567 890</p>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Win a $500 Cash Prize. All rights reserved.</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    let shareCount = 0;
+
+    function share(platform) {
+      const url = "https://wina500.netlify.app/"; // Replace with your actual page URL
+      const text = "Win a $500 Cash Prize! Enter now to participate.";
+      const shareUrls = {
+        Facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
+        Twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`,
+        WhatsApp: `https://api.whatsapp.com/send?text=${encodeURIComponent(text + " " + url)}`,
+        LinkedIn: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(url)}`,
+        Email: `mailto:?subject=${encodeURIComponent("Win a $500 Cash Prize!")}&body=${encodeURIComponent(text + " " + url)}`
+      };
+
+      if (shareUrls[platform]) {
+        window.open(shareUrls[platform], '_blank');
+        shareCount++;
+        updateShareCount();
+      } else {
+        alert("Platform not supported!");
+      }
+    }
+
+    function updateShareCount() {
+      document.getElementById('share-count').innerText = `Shares: ${shareCount} / 10`;
+
+      if (shareCount >= 10) {
+        document.getElementById('win-message').style.display = 'block';
+      }
+    }
+  </script>
+</body>
+</html>
+
